@@ -17,7 +17,9 @@ function App() {
       setNum2(event.target.value);
     };
 
-    const validateInputs = () => {
+  //  validation of inputs and errors
+    
+  const validateInputs = () => {
       
       if (!num1) {
         setError('Error : Num1 cannot be empty');
@@ -41,7 +43,9 @@ function App() {
       return true;
     };
 
-    const handleAddition = () => {
+   //Arithmetic Operations:
+   
+  const handleAddition = () => {
       if (!validateInputs()) return;
       setResult(parseFloat(num1) + parseFloat(num2));
     };
